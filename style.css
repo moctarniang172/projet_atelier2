@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: linear-gradient(#0c1635,#091124);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.container{
+    width: 90%;
+    margin: 40px auto;
+    color: #fff;
+  
+}
+.liens-active{
+  background-color: #cc462e;
+}
+.container .titre{
+    display: flex;
+    background-color: #252b36c0;
+    width: auto;
+    height: 50px;
+    border-radius: 15px;
+}
+.img1{
+  width: 45px;
+}
+.img2{
+  padding-left: 80%;
+  width: 60px;
+  height: 50px;
+}
+.container .header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+}
+.cards{
+    width: auto;
+    height: 140px;
+    background-color: #252b36c0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+
+}
+.card{
+  display: flex;
+}
+.card .img3{
+  width: 60px;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+.cards .card .text{
+  margin-top: -15px;
+  font-size: small;
+}
+.cards .card .text h2{
+  margin-top: 25px;
+  padding-top: 5px;
+}
+.cards .card .text p{
+  padding-top: -55px;
+  margin-top: -10px;
+}
+ button{
+  color: #fff;
+  background-color: #252b36c0;
+  border-radius:10px;
+  border: 0.5em px solid #fff
+  
+}
+
+.btn_action{
+    display: flex;
+    justify-content: space-between;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #226e1f; /* rouge comme ton image */
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked +.slider {
+  background-color: #cc462e; /* vert (change si tu veux garder rouge) */
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+@media(max-width: 767px) {
+
+  .titre{
+    display: flex;
+    background-color: #252b36c0;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    
+  }
+  .titre .img2{
+    padding-left: 50%;
+  }
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .cards{
+    height: auto;
+    
+  }
+  .card{
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+
+  }
+  .card .img3{
+    padding-left: 65%;
+  }
+  
+}
